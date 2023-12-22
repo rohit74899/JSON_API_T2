@@ -4,11 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Import and Display Products</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <input type="file" id="fileInput" accept=".json">
-    <button onclick="importData()">Import Data</button>
-    <div id="tableContainer"></div>
+    <div class="container">
+        <h2>STEP:1</h2>
+        <input type="file" id="fileInput" accept=".json">
+        <h3>(Only supports JSON file)</h3>
+        
+        
+    </div>
+    <div class="container">
+        <h2>STEP:2</h2>
+        <button onclick="importData()">Import Data</button>
+    </div>
+    <div class="container">
+        <h2>STEP:3</h2>
+        <div class="columns-container">
+            <select id="availableFields" multiple></select>
+            <div class="controls">
+                <button onclick="addSelected()">>></button>
+                <button onclick="removeSelected()">&lt;&lt;</button>
+            </div>
+            <select id="displayedFields" multiple></select>
+        </div>
+
+        <table id="dataTable">
+            <thead></thead>
+            <tbody></tbody>
+        </table>
+    </div>
 
     <script src="app.js"></script>
 </body>
