@@ -15,8 +15,36 @@
         
     </div>
     <div class="container">
-        <h2>STEP:2</h2>
+        <div class="step2">
+            <h2>STEP:2</h2>
+        <label for="format">Format:</label>
+        <select id="format" name="format">
+            <option value="json">JSON</option>
+            <option value="csv">CSV</option>
+        </select>
+        <br>
+        <label for="fileType">File Type:</label>
+        <select id="fileType" name="fileType">
+            <option value="json">JSON</option>
+            <option value="csv">CSV</option>
+        </select>
+        <br>
+        <label for="encoding">Character Encoding:</label>
+        <select id="encoding" name="encoding">
+            <option value="utf-8">UTF-8</option>
+            <option value="utf-16">UTF-16</option>
+            <!-- Add more encoding options as needed -->
+        </select>
+        <br>
+        <label for="delimiter">Delimiter:</label>
+        <input type="text" id="delimiter" name="delimiter" placeholder="e.g., ,">
+        <br>
+        <label for="hasHeader">Has Header:</label>
+        <input type="checkbox" id="hasHeader" name="hasHeader">
+
         <button onclick="importData()">Import Data</button>
+        </div>
+        
     </div>
     <div class="container">
         <h2>STEP:3</h2>

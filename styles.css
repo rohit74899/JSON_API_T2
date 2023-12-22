@@ -41,3 +41,13 @@ th, td {
     padding: 8px;
     text-align: left;
 }
+.container .step2 label,
+.container .step2 select,
+.container .step2 input[type="text"],
+.container .step2 input[type="checkbox"],
+.container button {
+     /* Make these elements full-width */
+     height: 25px;
+    box-sizing: border-box;
+    margin-bottom: 10px; /* Add some spacing between elements */
+}
